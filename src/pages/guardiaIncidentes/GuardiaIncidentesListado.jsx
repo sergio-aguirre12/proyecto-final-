@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-// ❌ ELIMINADAS: La importación de Navbar y LogoutButton
 import { fetchAllIncidentes } from '../../services/Api.jsx'; 
 
 const GuardiaIncidentesListado = ({ onReporteClick }) => {
@@ -42,9 +41,9 @@ const GuardiaIncidentesListado = ({ onReporteClick }) => {
     }, [incidentes, filtroEstado]);
 
     
-    // ----------------------------------------------------------------------
+   
     // RENDERIZADO (Solo contenido: No hay Navbar ni LogoutButton aquí)
-    // ----------------------------------------------------------------------
+    
     if (isLoading) return <p className="loading-message">⏳ Cargando reportes de incidentes...</p>;
     if (error) return <p className="error-message">🚨 {error}</p>;
 

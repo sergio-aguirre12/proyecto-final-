@@ -24,60 +24,58 @@
   font-weight: bold;
 }
 
-/* ================================================= */
-/* FormRegister.css - CENTRADO Y ESTILO MEJORADO     */
-/* ================================================= */
+
 
 .form-register {
-    /* 🛑 CLAVE 1: Define un ancho máximo para el formulario */
+    
     max-width: 650px; 
     width: 100%;
     
-    /* 🛑 CLAVE 2: Centra el bloque horizontalmente con margen automático */
+    
     margin: 50px auto; 
     
-    /* Estilos visuales para el tema oscuro */
-    background-color: #2e2e4a; /* Un fondo de tarjeta oscuro para contraste */
+   
+    background-color: #2e2e4a;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid #5a5a8a; /* Borde sutil */
+    border: 1px solid #5a5a8a;
     
-    /* Configuración de Flexbox para organizar los elementos en columna */
+  
     display: flex; 
     flex-direction: column;
-    gap: 15px; /* Espacio uniforme entre elementos */
+    gap: 15px; 
 }
 
-/* Estilo del título */
+
 .form-register h2 {
-    color: #ff5252; /* Rojo, como se ve en tu captura */
+    color: #ff5252; 
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-/* Estilo de los inputs */
+
 .form-register input[type="text"],
 .form-register input[type="number"] {
     padding: 12px;
     border: 1px solid #5a5a8a;
     border-radius: 6px;
-    background-color: #3e3e60; /* Fondo de input más oscuro */
-    color: #f0f0f0; /* Texto claro */
+    background-color: #3e3e60; 
+    color: #f0f0f0; 
     font-size: 16px;
     width: 100%;
 }
 
-/* Color del placeholder para accesibilidad */
+
 .form-register input::placeholder {
     color: #a0a0c0;
 }
 
-/* Estilo del botón de registro */
+
 .form-register button[type="submit"] {
     padding: 12px 20px;
-    background-color: #8a2be2; /* El púrpura neón que estás usando */
+    background-color: #8a2be2;
     color: white;
     border: none;
     border-radius: 6px;
@@ -94,7 +92,7 @@
     box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
 }
 
-/* Estilos de la previsualización de la foto */
+
 .form-register .preview {
     display: flex;
     flex-direction: column;

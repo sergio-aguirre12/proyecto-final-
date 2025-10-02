@@ -4,10 +4,10 @@ import './insidentedetallemodal.css';
 const IncidenteDetalleModal = ({ incidente, onClose, parseNotas }) => {
     if (!incidente) return null;
 
-    // 1. Usar la función parseNotas para formatear la sección 'notas'
+    //  parseNotas para formatear la sección 
     const detallesParseados = parseNotas(incidente.notas);
     
-    // 2. Crear un array con los detalles adicionales (Tipo, Descripción) que ya existen
+
     // Si la Descripción NO fue parseada previamente y existe como campo, la incluimos.
     const detallesAdicionales = [];
 

@@ -1,15 +1,12 @@
-/* ================================================= */
-/* CheckEntry.css - CÓDIGO FINAL CORREGIDO DE CONTRASTE */
-/* ================================================= */
 
 .check-entry {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9fafb; /* Fondo claro */
+  background-color: #f9fafb; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* 🛑 CORRECCIÓN: Forzar el color de texto base a negro */
+  
   color: #333 !important;
 }
 
@@ -18,7 +15,7 @@
   color: #333;
 }
 
-/* --- Estilos de Inputs y Textarea --- */
+
 
 input[type="text"] {
   width: 100%;
@@ -26,7 +23,7 @@ input[type="text"] {
   margin: 12px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
-  color: #333; /* Aseguramos que el texto del input sea oscuro */
+  color: #333; 
 }
 
 textarea {
@@ -35,10 +32,9 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 6px;
   resize: vertical;
-  color: #333; /* Aseguramos que el texto del textarea sea oscuro */
+  color: #333; 
 }
 
-/* --- Estilos de Botones --- */
 
 button {
   margin-right: 10px;
@@ -55,7 +51,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* --- Estilos de Mensajes (Aseguran buen contraste) --- */
+
 
 .success {
   color: green;
@@ -84,15 +80,15 @@ button:hover {
   font-weight: bold;
 }
 
-/* --- Estilos de la Tarjeta de Perfil --- */
+
 
 .persona-perfil {
   margin-top: 20px;
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff; 
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  /* 🛑 CORRECCIÓN: Forzar el color de texto base del perfil a negro */
+ 
   color: #333 !important;
 }
 
@@ -101,7 +97,7 @@ button:hover {
   border-radius: 8px;
 }
 
-/* 🛑 CORRECCIÓN: Aplicar color negro a TODAS las etiquetas de texto dentro del perfil */
+
 .persona-perfil h3,
 .persona-perfil p,
 .persona-perfil strong,
@@ -110,7 +106,7 @@ button:hover {
     color: #333 !important;
 }
 
-/* --- Estilos del Historial de Entradas --- */
+
 
 .historial-entradas {
   margin-top: 20px;
@@ -142,6 +138,6 @@ button:hover {
   padding: 8px;
   border-bottom: 1px solid #eee;
   font-size: 14px;
-  /* 🛑 CORRECCIÓN: Asegurar que el texto del historial sea oscuro */
+ 
   color: #333 !important;
 }

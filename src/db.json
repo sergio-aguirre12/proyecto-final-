@@ -163,6 +163,14 @@
       "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759388635/ltookwccqjwrrxv24kc0.png",
       "flagged": false,
       "status": "pendiente"
+    },
+    {
+      "id": "604150330",
+      "nombre": "sergio",
+      "edad": 56,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759416581/v18r5yi0ekq5vkptrqme.png",
+      "flagged": false,
+      "status": "pendiente"
     }
   ],
   "entradas": [
@@ -291,6 +299,16 @@
       "personaId": "6044444",
       "fecha": "2025-10-02",
       "hora": "23:01",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "bd6d",
+      "personaId": "6044444",
+      "fecha": "2025-10-02",
+      "hora": "08:48",
       "incidente": false,
       "notas": "",
       "aceptado": true,
@@ -507,6 +525,16 @@
       "tipo": "3423423e",
       "gravedad": "leve",
       "descripcion": "23ed2wd"
+    },
+    {
+      "id": "76d8",
+      "personaId": "604150330",
+      "fecha": "2025-10-02",
+      "hora": "08:50",
+      "estado": "pendiente",
+      "tipo": "pelion",
+      "gravedad": "grave",
+      "descripcion": "se aagarro y apuñaio"
     }
   ],
   "logs_acceso": [

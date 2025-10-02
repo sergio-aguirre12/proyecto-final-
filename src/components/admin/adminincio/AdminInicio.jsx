@@ -1,9 +1,9 @@
 import React from 'react';
-import './AdminInicio.css'; // Asegúrate de crear este archivo CSS
+import './AdminInicio.css';
 
 const AdminInicio = ({ isLoading, error, dashboardMetrics, onNavigateTo }) => {
 
-    // Destructuración de las métricas para un uso más limpio
+
     const {
         ingresosHoy,
         incidentesPendientes,
@@ -38,7 +38,7 @@ const AdminInicio = ({ isLoading, error, dashboardMetrics, onNavigateTo }) => {
             {/* --- Sección de Métricas Clave (Cards) --- */}
             <div className="metricas-grid">
                 
-                {/* 1. Ingresos Hoy */}
+                {/* Ingresos Hoy */}
                 <div className="card ingreso-hoy" onClick={() => handleNavigation('entradas')}>
                     <div className="card-icon">📈</div>
                     <div className="card-content">
@@ -47,7 +47,7 @@ const AdminInicio = ({ isLoading, error, dashboardMetrics, onNavigateTo }) => {
                     </div>
                 </div>
 
-                {/* 2. Incidentes Pendientes */}
+                {/*  Incidentes Pendientes */}
                 <div className="card incidente-pendiente" onClick={() => handleNavigation('incidentes', 'pendiente')}>
                     <div className="card-icon">🚨</div>
                     <div className="card-content">
@@ -56,7 +56,7 @@ const AdminInicio = ({ isLoading, error, dashboardMetrics, onNavigateTo }) => {
                     </div>
                 </div>
 
-                {/* 3. Rechazos Hoy */}
+                {/*  Rechazos Hoy */}
                 <div className="card rechazos-hoy" onClick={() => handleNavigation('entradas')}>
                     <div className="card-icon">🚫</div>
                     <div className="card-content">

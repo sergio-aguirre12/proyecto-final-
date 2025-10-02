@@ -1,6 +1,6 @@
-// src/components/incidents/ReportarIncidente.jsx
+
 import React, { useState, useEffect } from "react";
-import { fetchPersonas, postIncidente } from "../../services/Api"; // ✅ Importa postIncidente
+import { fetchPersonas, postIncidente } from "../../services/Api"; 
 import "../incidents/IncidentReport.css";
 
 const ReportarIncidente = () => {

@@ -1,49 +1,45 @@
-/* ================================================= */
-/* NAVBAR CSS - CORREGIDO PARA ALINEACIÓN UNIFORME   */
-/* ================================================= */
+
 
 :root {
-    /* Variables de color de referencia */
+    
     --color-dark: #121212;
-    --color-bg-navbar: #1f1430; /* Usando un color más oscuro de tus capturas */
-    --color-primary-neon: #8a2be2; /* Púrpura Neón para la navegación */
-    --color-danger-neon: #ff5252; /* Rojo Neón para CERRAR SESIÓN */
+    --color-bg-navbar: #1f1430; 
+    --color-primary-neon: #8a2be2; 
+    --color-danger-neon: #ff5252; 
     --color-text-light: #f0f0f0;
 }
 
 .navbar {
     display: flex;
-    /* 🛑 CORRECCIÓN: Usamos 'space-between' para separar el grupo de botones del Logout */
+    
     justify-content: space-between; 
     align-items: center;
     width: 100%;
-    /* Fondo muy oscuro, como la noche del club */
+    
     background-color: var(--color-bg-navbar); 
     padding: 10px 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra pesada */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
     position: sticky; 
     top: 0;
     z-index: 1000;
 }
 
-/* 🛑 CLASE AGREGADA: Contenedor para el grupo de botones de navegación */
+
 .navbar-menu {
     display: flex;
-    gap: 10px; /* Espacio entre los botones de navegación */
-    flex-wrap: nowrap; /* Mantiene todos los botones en una sola línea */
-    /* Permite el scroll si es necesario en pantallas muy pequeñas */
+    gap: 10px; 
+    flex-wrap: nowrap; 
+   
     overflow-x: auto; 
-    /* Evita que los botones del menú se encojan */
+    
     flex-shrink: 0;
 }
 
 
-/* ------------------------------------- */
-/* 1. Estilos para los botones de Navegación (nav-item) */
-/* ------------------------------------- */
+
 
 .navbar button.nav-item {
-    /* Fondo base de los botones de navegación */
+   
     background-color: var(--color-bg-navbar); 
     color: var(--color-text-light);
     border: 2px solid var(--color-primary-neon); 
@@ -52,10 +48,10 @@
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
-    /* Evita que los botones de navegación se encojan */
+    
     flex-shrink: 0; 
     
-    /* Efecto Neón Inicial */
+   
     box-shadow: 0 0 8px rgba(138, 43, 226, 0.4); 
     transition: all 0.3s ease-in-out;
 }
@@ -64,21 +60,18 @@
 .navbar button.nav-item:focus {
     background-color: #1a0a38;
     color: white;
-    /* Efecto de brillo más intenso */
+
     box-shadow: 0 0 15px var(--color-primary-neon), 0 0 25px rgba(138, 43, 226, 0.2); 
     transform: scale(1.05); 
 }
 
 
-/* ------------------------------------- */
-/* 2. Estilos para el botón de CERRAR SESIÓN (logout-button) */
-/* ------------------------------------- */
 
 .navbar .logout-button {
     background-color: var(--color-danger-neon); 
     box-shadow: 0 0 15px var(--color-danger-neon); 
     border: 2px solid var(--color-danger-neon);
-    color: white; /* Asegurar color blanco, aunque ya lo tienes en la regla general */
+    color: white;
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 600;

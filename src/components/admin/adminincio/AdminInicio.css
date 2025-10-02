@@ -1,4 +1,4 @@
-/* Contenedor Principal */
+
 .admin-inicio-container {
     padding: 20px;
     background-color: #f4f7f6;
@@ -18,7 +18,7 @@
     margin-bottom: 30px;
 }
 
-/* --- Métricas Grid (Tarjetas) --- */
+
 .metricas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -59,17 +59,17 @@
     margin: 0;
 }
 
-/* Colores específicos para valores */
-.ingreso-hoy .card-value { color: #28a745; /* Verde */ }
-.incidente-pendiente .card-value { color: #dc3545; /* Rojo */ }
-.rechazos-hoy .card-value { color: #ffc107; /* Amarillo */ }
-.edad-promedio .card-value { color: #007bff; /* Azul */ }
+
+.ingreso-hoy .card-value { color: #28a745; }
+.incidente-pendiente .card-value { color: #dc3545;  }
+.rechazos-hoy .card-value { color: #ffc107;  }
+.edad-promedio .card-value { color: #007bff; }
 
 
-/* --- Alertas y Movimientos Grid --- */
+
 .alertas-movimientos-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
@@ -89,7 +89,7 @@
     padding-bottom: 10px;
 }
 
-/* Estilos de las Alertas */
+
 .alerta-item {
     display: flex;
     justify-content: space-between;
@@ -153,7 +153,7 @@
 }
 
 
-/* Estilos de Último Movimiento */
+
 .movimiento-detalle {
     padding: 10px;
     border: 1px solid #eee;
@@ -192,7 +192,7 @@
     color: #aaa;
 }
 
-/* Estilos de errores */
+
 .error-message {
     color: #dc3545;
     background-color: #f8d7da;

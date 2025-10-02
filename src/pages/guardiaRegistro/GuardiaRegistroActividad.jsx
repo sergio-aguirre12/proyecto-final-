@@ -28,21 +28,21 @@ const GuardiaRegistroActividad = ({ onVolver }) => {
         loadLog();
     }, [loadLog]);
 
-    // ----------------------------------------------------------------------
-    // LÓGICA DE FILTRADO Y BÚSQUEDA (Optimizado con useMemo)
-    // ----------------------------------------------------------------------
+  
+    // LÓGICA DE FILTRADO Y BÚSQUEDA (useMemo)
+    
     const logsFiltrados = useMemo(() => {
         if (!logCompleto || logCompleto.length === 0) return [];
 
         let logs = logCompleto;
         const hoy = new Date().toISOString().split('T')[0];
         
-        // 1. FILTRO POR FECHA (Hoy vs. Todo)
+        //  FILTRO POR FECHA (Hoy vs. Todo)
         if (filtroDia === 'hoy') {
             logs = logs.filter(item => item.fecha && item.fecha.startsWith(hoy));
         }
 
-        // 2. FILTRO POR TEXTO (Búsqueda por Cédula o Nombre)
+        //  FILTRO POR TEXTO (Búsqueda por Cédula o Nombre)
         if (filtroTexto) {
             const textoBuscado = filtroTexto.toLowerCase();
             logs = logs.filter(item => 
@@ -51,7 +51,7 @@ const GuardiaRegistroActividad = ({ onVolver }) => {
             );
         }
         
-        // 3. Ordenar por fecha (más reciente primero)
+        // Ordenar por fecha (más reciente primero)
         logs.sort((a, b) => {
             const dateA = new Date(`${a.fecha} ${a.hora || '00:00'}`);
             const dateB = new Date(`${b.fecha} ${b.hora || '00:00'}`);
@@ -61,9 +61,9 @@ const GuardiaRegistroActividad = ({ onVolver }) => {
         return logs;
     }, [logCompleto, filtroDia, filtroTexto]);
     
-    // ----------------------------------------------------------------------
+  
     // RENDERIZADO
-    // ----------------------------------------------------------------------
+   
     if (isLoading) return <p className="loading-message">⏳ Cargando registros de actividad...</p>;
     if (error) return <p className="error-message">🚨 {error}</p>;
 

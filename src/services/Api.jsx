@@ -1,10 +1,8 @@
-// src/api/api.jsx
+const API_BASE = "http://localhost:3000"; 
 
-const API_BASE = "http://localhost:3000"; // Cambia si usas otro puerto
 
-//---------------------------------------------
 // USUARIOS
-//---------------------------------------------
+
 
 // Login por credenciales
 export const loginUsuario = async (usuario, password) => {
@@ -94,9 +92,9 @@ export const deleteUsuario = async (id) => {
     }
 };
 
-//---------------------------------------------
+
 // PERSONAS
-//---------------------------------------------
+
 
 //  Implementa la operación READ (Lectura) mediante el método HTTP GET.
 // Obtiene toda la colección de recursos 'personas'.
@@ -118,7 +116,7 @@ export const postPersona = async (persona) => {
         const personaConStatus = { ...persona, status: "pendiente" };
 
         const res = await fetch(`${API_BASE}/personas`, {
-            method: "POST", // 👈 Método POST para CREAR un nuevo recurso
+            method: "POST", 
             headers: { "Content-Type": "application/json" }, // Indica que el cuerpo es JSON
             body: JSON.stringify(personaConStatus), // El cuerpo lleva los datos del nuevo recurso
         });
@@ -196,9 +194,9 @@ export const getPersonaByRut = async (rut) => {
 };
 
 
-//---------------------------------------------
+
 // ENTRADAS (Registro de Actividad Principal)
-//---------------------------------------------
+
 
 /** Obtiene TODAS las entradas (usada por AdminDashboard) */
 export const fetchEntradas = async () => {
@@ -247,11 +245,11 @@ export const postEntrada = async (entradaData) => {
 };
 
 
-//---------------------------------------------
-// INCIDENTES
-//---------------------------------------------
 
-/** Obtiene TODOS los incidentes (Necesario para AdminDashboard) */
+// INCIDENTES
+
+
+/** Obtiene TODOS los incidentes admin) */
 export const fetchAllIncidentes = async () => {
     try {
         const res = await fetch(`${API_BASE}/incidentes`);
@@ -297,7 +295,7 @@ export const updateIncidenteStatus = async (id, status) => {
         const res = await fetch(`${API_BASE}/incidentes/${id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ estado: status }), // Asumo que el campo se llama 'estado' en tu db.json
+            body: JSON.stringify({ estado: status }), 
             
         });
         if (!res.ok) throw new Error("Error al actualizar estado del incidente");
@@ -308,9 +306,9 @@ export const updateIncidenteStatus = async (id, status) => {
     }
 };
 
-//---------------------------------------------
+
 // LOGS DE ACCESO (Logs técnicos/alternativos)
-//---------------------------------------------
+
 
 /** Obtiene todos los logs de acceso (Endpoint: /logs_acceso) */
 export const fetchLogAccesosDenegados = async () => {

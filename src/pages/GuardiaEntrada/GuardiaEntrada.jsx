@@ -69,7 +69,7 @@ const GuardiaEntrada = () => {
     }, [cargarDatos]);
 
 
-    // --- CÁLCULO DE MÉTRICAS (USEMEMO) ---
+    //CÁLCULO DE MÉTRICAS (USEMEMO) 
     const personasAceptadasCount = useMemo(() => 
         (personas || []).filter(p => p.status === 'aceptado').length, 
     [personas]);

@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import "../modal/usariomodal.css"; 
 
@@ -117,7 +115,7 @@ const UsuarioModal = ({ onClose, onSave, usuarioInicial, isLoading, error }) => 
                         <button 
                             type="button" 
                             className="btn-cancelar" 
-                            onClick={onClose} // Cierre manual
+                            onClick={onClose} 
                             disabled={isLoading}
                         >
                             Cancelar

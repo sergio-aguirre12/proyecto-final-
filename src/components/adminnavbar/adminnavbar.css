@@ -1,13 +1,13 @@
-/* src/components/navbar/navbar.css (Navbar del Guardia) */
+
 
 .navbar-guardia {
     width: 100%;
-    height: 65px; /* Altura consistente con el Admin */
+    height: 65px; 
     position: fixed;
     top: 0;
     left: 0;
     
-    /* Fondo muy oscuro de Club Access */
+    
     background-color: #1A102A; 
     color: white;
     
@@ -15,7 +15,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Links a la izquierda y a la derecha */
+    justify-content: space-between; 
     z-index: 1000;
     font-family: 'Inter', sans-serif;
 }

@@ -1,5 +1,3 @@
-// src/components/guardia/guardiainicio/GuardiaInicio.jsx
-
 import React from 'react';
 import './GuardiaInicio.css';
 
@@ -18,7 +16,7 @@ const GuardiaInicio = ({
         incidentesPendientes = 0,
     } = dashboardMetrics;
 
-    // Componente de Tarjeta de Métrica (reutilizable)
+    // Componente de Tarjeta de Métrica 
     const MetricCard = ({ title, value, color, icon, targetSection, onClick }) => (
         <div 
             className="guardia-metric-card" 
@@ -42,7 +40,7 @@ const GuardiaInicio = ({
             
             <div className="guardia-metrics-grid">
                 
-                {/* MÉTRICA 1: Entradas Aceptadas Hoy */}
+                {/*  Entradas Aceptadas Hoy */}
                 <MetricCard
                     title="Entradas Aceptadas Hoy"
                     value={entradasAceptadasHoy}
@@ -52,7 +50,7 @@ const GuardiaInicio = ({
                     onClick={onNavigateTo}
                 />
 
-                {/* MÉTRICA 2: Personas Aceptadas/Con Acceso */}
+                {/*  Personas Aceptadas/Con Acceso */}
                 <MetricCard
                     title="Personas con Acceso (Aceptadas)"
                     value={personasAceptadas}
@@ -62,7 +60,7 @@ const GuardiaInicio = ({
                     onClick={onNavigateTo}
                 />
                 
-                {/* MÉTRICA 3: Incidentes Pendientes */}
+                {/*  Incidentes Pendientes */}
                 <MetricCard
                     title="Incidentes Abiertos (Pendientes)"
                     value={incidentesPendientes}

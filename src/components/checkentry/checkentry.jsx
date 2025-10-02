@@ -1,5 +1,3 @@
-// src/components/checkentry/CheckEntry.jsx - CÓDIGO FINAL Y CORREGIDO
-
 import React, { useState, useEffect } from "react";
 import "./CheckEntry.css";
 import {
@@ -72,13 +70,13 @@ const CheckEntry = () => {
 
     let aceptadoFinal = accionGuardiaAcepta; // Inicializa con la acción del botón
 
-    // 🛑 REGLA DE SEGURIDAD 1: Persona marcada como conflictiva (flagged)
+    // 🛑 RPersona marcada como conflictiva (flagged)
     if (persona.flagged && accionGuardiaAcepta) {
       alert("⚠️ ADVERTENCIA: Esta persona está marcada como conflictiva y NO puede ingresar. Registrando como RECHAZADA.");
       aceptadoFinal = false;
     }
 
-    // 🛑 REGLA DE SEGURIDAD 2: Persona Rechazada o Pendiente por la Administración
+    // 🛑  Persona Rechazada o Pendiente por la Administración
     if (persona.status === 'rechazado' && accionGuardiaAcepta) {
       alert("🚫 ALERTA CRÍTICA: Esta persona fue RECHAZADA por la Administración. Registrando como RECHAZADA.");
       aceptadoFinal = false; // Forzar el log a FALSO
@@ -89,7 +87,7 @@ const CheckEntry = () => {
       aceptadoFinal = false; // Forzar el log a FALSO
     }
 
-    // 🛑 PREVENCIÓN DE ENTRADA POR EDAD (si la edad es menor a 18)
+    // PREVENCIÓN (si la edad es menor a 18)
     if (Number(persona.edad) < 18) {
       alert("🚫 BLOQUEO: Menor de edad. Entrada registrada como RECHAZADA.");
       aceptadoFinal = false;
@@ -161,7 +159,7 @@ const CheckEntry = () => {
         <div className="persona-perfil">
           <h3>{persona.nombre}</h3>
 
-          {/* 🛑 Muestra el estado oficial */}
+          {/* Muestra el estado oficial */}
           <p>Estado Oficial: <strong>{persona.status ? persona.status.toUpperCase() : 'N/A'}</strong></p>
 
           <p>Edad: {persona.edad}</p>

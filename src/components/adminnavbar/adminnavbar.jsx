@@ -1,9 +1,9 @@
-// src/components/adminnavbar/adminnavbar.jsx
+
 import React from 'react';
 import './AdminNavbar.css';
 import LogoutButton from '../comon/LogoutButton.jsx';
 
-// El componente ahora acepta la prop 'pendingNotificationsCount'
+
 const AdminNavbar = ({ onSelect, pendingNotificationsCount = 0 }) => {
   return (
     <nav className="admin-navbar">
