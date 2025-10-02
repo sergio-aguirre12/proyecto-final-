@@ -1,0 +1,510 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "password": "123456",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "usuario": "guardia",
+      "password": "123456",
+      "rol": "guardia"
+    },
+    {
+      "id": "8ae8",
+      "usuario": "daniel",
+      "password": "123456",
+      "rol": "guardia"
+    }
+  ],
+  "personas": [
+    {
+      "id": "213123123",
+      "nombre": "6041231",
+      "edad": 123,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758645550/skikov0cevsnb3hqoqz2.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "6044444",
+      "nombre": "daniee",
+      "edad": 25,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758656684/fwz2ptp1gc7aenquozbx.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "8003333",
+      "nombre": "sergio",
+      "edad": 35,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758724110/vtnrzdi8un0ji3av9ve1.png",
+      "flagged": false,
+      "status": "rechazado"
+    },
+    {
+      "id": "66666666",
+      "nombre": "danie",
+      "edad": 12,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758731926/mtp06ns6eitj2bwzifvb.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "32423423423",
+      "nombre": "dabinel",
+      "edad": 3,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758822560/pj7j3fvz327tir78zops.png",
+      "flagged": false,
+      "status": "rechazado"
+    },
+    {
+      "id": "123354456",
+      "nombre": "sergio",
+      "edad": 45,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758825519/w25vpgq2fgzmzapefy6q.png",
+      "flagged": false,
+      "status": "rechazado"
+    },
+    {
+      "id": "6015333333",
+      "nombre": "sergio",
+      "edad": 33,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758829579/sqgpk1yu6mq9eh1xu3oz.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "60000000",
+      "nombre": "cacheton",
+      "edad": 25,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758835065/mymxmtnobb81mdvdm4ov.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "56777",
+      "nombre": "cfrctrgvrc",
+      "edad": 56,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1758899538/b53s2sowmfmpyjpwdy8e.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "34343",
+      "nombre": "3423e232",
+      "edad": 3343,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759165698/vyzjnwarw7vv9qijw28n.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "123456",
+      "nombre": "sergio",
+      "edad": 34,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759165766/oqljlravecizif3iuopn.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "12345678",
+      "nombre": "daniel quiroz",
+      "edad": 33,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759165824/uhyuvoudith4fnveuzsc.png",
+      "flagged": false,
+      "status": "rechazado"
+    },
+    {
+      "id": "23123123123",
+      "nombre": "zsdcsd",
+      "edad": 23,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759166826/avdgskjpmmkhmxjsjizh.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "123123123",
+      "nombre": "serg",
+      "edad": 35,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759347581/ps57uknhss9sxa0e0mse.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "231231232",
+      "nombre": "serguio",
+      "edad": 35,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759347678/jx6qyuflnmwq2ozc6fse.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "604150330",
+      "nombre": "sergio",
+      "edad": 34,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759370329/k7y1itabin9jjma9wbpg.png",
+      "flagged": false,
+      "status": "aceptado"
+    },
+    {
+      "id": "234324234234",
+      "nombre": "sergio",
+      "edad": 35,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759381318/ujqsslrrmrsso03ic1r3.png",
+      "flagged": false,
+      "status": "pendiente"
+    }
+  ],
+  "entradas": [
+    {
+      "id": "e860",
+      "personaId": "8003333",
+      "fecha": "2025-09-24",
+      "hora": "11:55",
+      "incidente": false,
+      "notas": "sssss",
+      "aceptado": true,
+      "estado": "pendiente"
+    },
+    {
+      "id": "47b0",
+      "personaId": "6044444",
+      "fecha": "2025-09-26",
+      "hora": "09:02",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "9722",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "13:57",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "8c31",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:00",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "bc97",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:01",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "a5fe",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:05",
+      "incidente": false,
+      "notas": "Entrada rechazada",
+      "aceptado": false,
+      "estado": "rechazada"
+    },
+    {
+      "id": "ca8e",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:09",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "fa9e",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:23",
+      "incidente": false,
+      "notas": "Entrada rechazada/bloqueada",
+      "aceptado": false,
+      "estado": "pendiente"
+    },
+    {
+      "id": "6b72",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "14:48",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "48f1",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "15:07",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "ab56",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "15:09",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "74c6",
+      "personaId": "6044444",
+      "fecha": "2025-10-01",
+      "hora": "15:19",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    },
+    {
+      "id": "74a4",
+      "personaId": "6044444",
+      "fecha": "2025-10-02",
+      "hora": "23:01",
+      "incidente": false,
+      "notas": "",
+      "aceptado": true,
+      "estado": "aceptada"
+    }
+  ],
+  "incidentes": [
+    {
+      "id": "15e8",
+      "personaId": null,
+      "fecha": "2025-09-25",
+      "hora": "11:27",
+      "incidente": true,
+      "aceptado": false,
+      "estado": "resuelto",
+      "notas": "Tipo: mato\nGravedad: grave\nDescripción: apuñalo "
+    },
+    {
+      "id": "4152",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:20",
+      "estado": "resuelto",
+      "tipo": "kmvdfv",
+      "gravedad": "leve",
+      "descripcion": "dfvdfvdfv"
+    },
+    {
+      "id": "4096",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:30",
+      "estado": "resuelto",
+      "tipo": "dcdscd",
+      "gravedad": "grave",
+      "descripcion": "csdcds"
+    },
+    {
+      "id": "ba04",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:31",
+      "estado": "resuelto",
+      "tipo": "rgvthbyhb",
+      "gravedad": "grave",
+      "descripcion": "ybhybyhb"
+    },
+    {
+      "id": "2327",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:32",
+      "estado": "resuelto",
+      "tipo": "brinco se tiro",
+      "gravedad": "grave",
+      "descripcion": "brinca y salta "
+    },
+    {
+      "id": "8398",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:38",
+      "estado": "resuelto",
+      "tipo": "dadasx",
+      "gravedad": "leve",
+      "descripcion": "axasxasxasx"
+    },
+    {
+      "id": "661f",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:46",
+      "estado": "resuelto",
+      "tipo": "dfsdcsdc",
+      "gravedad": "leve",
+      "descripcion": "sdcsdcds"
+    },
+    {
+      "id": "df95",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:52",
+      "estado": "resuelto",
+      "tipo": "pablito clavo un clavito",
+      "gravedad": "grave",
+      "descripcion": "yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "3c24",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "08:54",
+      "estado": "resuelto",
+      "tipo": "ddasdasdas",
+      "gravedad": "grave",
+      "descripcion": "dadada"
+    },
+    {
+      "id": "2545",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "11:32",
+      "estado": "resuelto",
+      "tipo": "se pelio con tdo el miundo",
+      "gravedad": "leve",
+      "descripcion": "sdadadewdcdcrtvtrv"
+    },
+    {
+      "id": "5dd1",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "11:55",
+      "estado": "resuelto",
+      "tipo": "dcefcefcefcedc",
+      "gravedad": "grave",
+      "descripcion": "edcedcedc"
+    },
+    {
+      "id": "ec0c",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "11:58",
+      "estado": "resuelto",
+      "tipo": "gffvdfvdfvdv",
+      "gravedad": "grave",
+      "descripcion": "dfvdfvdfvdf"
+    },
+    {
+      "id": "81e7",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "13:44",
+      "estado": "resuelto",
+      "tipo": "12345456",
+      "gravedad": "leve",
+      "descripcion": "edececr"
+    },
+    {
+      "id": "d16d",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "13:45",
+      "estado": "resuelto",
+      "tipo": "3423423",
+      "gravedad": "leve",
+      "descripcion": "432432"
+    },
+    {
+      "id": "7917",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "13:49",
+      "estado": "resuelto",
+      "tipo": "234234",
+      "gravedad": "leve",
+      "descripcion": "324234324"
+    },
+    {
+      "id": "5fd8",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "13:57",
+      "estado": "resuelto",
+      "tipo": "4234234",
+      "gravedad": "leve",
+      "descripcion": "234324"
+    },
+    {
+      "id": "d909",
+      "personaId": null,
+      "fecha": "2025-09-26",
+      "hora": "15:36",
+      "estado": "resuelto",
+      "tipo": "fsdcsdc",
+      "gravedad": "gravísima",
+      "descripcion": "dsfsdcdsfs"
+    },
+    {
+      "id": "9bfc",
+      "personaId": "6044444",
+      "fecha": "2025-09-29",
+      "hora": "11:28",
+      "estado": "resuelto",
+      "tipo": "123456",
+      "gravedad": "leve",
+      "descripcion": "123123123"
+    },
+    {
+      "id": "4829",
+      "personaId": "123123123",
+      "fecha": "2025-10-01",
+      "hora": "13:40",
+      "estado": "resuelto",
+      "tipo": "NOTIFICACION_ACEPTACION",
+      "gravedad": "informativa",
+      "descripcion": "El Guardia aprobó el registro de serg (ID: 123123123)."
+    },
+    {
+      "id": "722a",
+      "personaId": "213123123",
+      "fecha": "2025-10-02",
+      "hora": "23:03",
+      "estado": "pendiente",
+      "tipo": "4444444",
+      "gravedad": "leve",
+      "descripcion": "234234234"
+    }
+  ],
+  "logs_acceso": [
+    {
+      "id": "1",
+      "cedula": "34.567.890-K",
+      "nombre": "Carlos Bloqueado",
+      "motivo": "Denegado por Admin",
+      "fecha": "2025-09-29 09:15:00"
+    },
+    {
+      "id": "2",
+      "cedula": "87.654.321-7",
+      "nombre": "María Restringida",
+      "motivo": "No encontrado en base de datos",
+      "fecha": "2025-09-29 10:30:00"
+    }
+  ]
+}

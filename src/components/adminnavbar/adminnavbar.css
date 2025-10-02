@@ -1,0 +1,81 @@
+/* src/components/navbar/navbar.css (Navbar del Guardia) */
+
+.navbar-guardia {
+    width: 100%;
+    height: 65px; /* Altura consistente con el Admin */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    /* Fondo muy oscuro de Club Access */
+    background-color: #1A102A; 
+    color: white;
+    
+    padding: 0 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Links a la izquierda y a la derecha */
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    align-items: center;
+}
+
+.navbar-item {
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    height: 65px; 
+    padding: 0 15px; 
+    margin: 0 5px;
+    border-bottom: 3px solid transparent; 
+}
+
+/* Estado de HOVER y ACTIVO (Usando el acento Púrpura/Azul) */
+.navbar-item:hover {
+    background-color: #2A1F3C; 
+    border-bottom: 3px solid #7B4CFF; 
+}
+
+.navbar-item.active {
+    background-color: #2A1F3C;
+    border-bottom: 3px solid #9A7CFF; /* Púrpura fuerte para activo */
+    font-weight: 600;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #e0e0e0; 
+    font-size: 0.9em;
+    font-weight: 500;
+    display: block;
+}
+
+/* Estilo para el botón de Cerrar Sesión */
+.navbar-cerrar-sesion {
+    /* Color de botón de acento Magenta/Púrpura */
+    background: linear-gradient(90deg, #FF00FF 0%, #7B4CFF 100%); 
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.navbar-cerrar-sesion:hover {
+    opacity: 0.85;
+}
+
+
+

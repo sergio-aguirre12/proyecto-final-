@@ -1,0 +1,202 @@
+/* Contenedor Principal */
+.admin-inicio-container {
+    padding: 20px;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+.admin-inicio-container h1 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.fecha-actualizacion {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+/* --- Métricas Grid (Tarjetas) --- */
+.metricas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.card-title {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+.card-value {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Colores específicos para valores */
+.ingreso-hoy .card-value { color: #28a745; /* Verde */ }
+.incidente-pendiente .card-value { color: #dc3545; /* Rojo */ }
+.rechazos-hoy .card-value { color: #ffc107; /* Amarillo */ }
+.edad-promedio .card-value { color: #007bff; /* Azul */ }
+
+
+/* --- Alertas y Movimientos Grid --- */
+.alertas-movimientos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 30px;
+}
+
+.panel-tareas, .panel-ultimo-movimiento {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.panel-tareas h2, .panel-ultimo-movimiento h2 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Estilos de las Alertas */
+.alerta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.alerta-item button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.alerta-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+.alerta-warning button {
+    background-color: #ffc107;
+    color: #333;
+}
+.alerta-warning button:hover {
+    background-color: #e0a800;
+}
+
+.alerta-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.alerta-danger button {
+    background-color: #dc3545;
+    color: white;
+}
+.alerta-danger button:hover {
+    background-color: #c82333;
+}
+
+.alerta-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.alerta-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alerta-count {
+    font-size: 1.4em;
+    margin: 0 10px;
+}
+
+
+/* Estilos de Último Movimiento */
+.movimiento-detalle {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.movimiento-detalle p {
+    margin: 5px 0;
+}
+
+.movimiento-time {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 15px !important;
+}
+
+.btn-ver-log {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-ver-log:hover {
+    background-color: #0056b3;
+}
+
+.no-data {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Estilos de errores */
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}

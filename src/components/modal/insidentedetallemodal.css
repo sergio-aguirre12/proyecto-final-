@@ -1,0 +1,85 @@
+/* src/components/admin/IncidenteDetalleModal.css */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh; /* Máximo 80% del alto de la ventana */
+    overflow-y: auto; /* Scroll si el contenido es muy largo */
+    color: #333;
+}
+
+.modal-content h3 {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.modal-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-info-grid strong {
+    color: #555;
+}
+
+.detalles-list {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+}
+
+.detalle-item {
+    margin-bottom: 8px;
+}
+
+.detalle-clave {
+    font-weight: bold;
+    color: #007bff;
+    display: inline-block;
+    min-width: 80px; /* Alineación visual */
+}
+
+.btn-cerrar-modal {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Rojo para cerrar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+}
+
+.btn-cerrar-modal:hover {
+    background-color: #c82333;
+}
+
+/* Limpieza después del float */
+.modal-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
