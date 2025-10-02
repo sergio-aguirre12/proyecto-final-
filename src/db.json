@@ -155,6 +155,14 @@
       "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759381318/ujqsslrrmrsso03ic1r3.png",
       "flagged": false,
       "status": "pendiente"
+    },
+    {
+      "id": "45345345345",
+      "nombre": "3r32redwed",
+      "edad": 34,
+      "foto": "https://res.cloudinary.com/dcfoaq1vo/image/upload/v1759388635/ltookwccqjwrrxv24kc0.png",
+      "flagged": false,
+      "status": "pendiente"
     }
   ],
   "entradas": [
@@ -489,6 +497,16 @@
       "tipo": "4444444",
       "gravedad": "leve",
       "descripcion": "234234234"
+    },
+    {
+      "id": "bccd",
+      "personaId": "66666666",
+      "fecha": "2025-10-02",
+      "hora": "00:08",
+      "estado": "pendiente",
+      "tipo": "3423423e",
+      "gravedad": "leve",
+      "descripcion": "23ed2wd"
     }
   ],
   "logs_acceso": [

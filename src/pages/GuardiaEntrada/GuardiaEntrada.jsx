@@ -1,107 +1,22 @@
 import React, { useState, useMemo, useCallback, useEffect } from "react";
-import Navbar from "../components/navbar/navbar.jsx";
-import CheckEntry from "../components/checkentry/checkentry.jsx";
-import FormRegister from "../components/registro/FormRegister.jsx";
-import ReportarIncidente from "../components/incidents/IncidentReport.jsx";
-// ✅ Limpieza: La importación de LogoutButton ya no es necesaria aquí si solo se usa en Navbar
-// import LogoutButton from "../comon/LogoutButton.jsx"; 
+import Navbar from "../../components/navbar/navbar.jsx";
+import CheckEntry from "../../components/checkentry/checkentry.jsx";
+import FormRegister from "../../components/registro/FormRegister.jsx";
+import ReportarIncidente from "../../components/incidents/IncidentReport.jsx";
 
-import GuardiaIncidentesListado from "../components/guardia/GuardiaIncidentesListado.jsx";
-import GuardiaPendientesListado from "../components/guardia/GuardiaPendientesListado.jsx";
-import GuardiaRegistroActividad from "../components/guardia/GuardiaRegistroActividad.jsx";
-import GuardiaInicio from "../components/guardia/guardiainicio/guardiainicio.jsx"; 
+import GuardiaIncidentesListado from "../guardiaIncidentes/GuardiaIncidentesListado.jsx";
+import GuardiaPendientesListado from "../guardiaPendientes/GuardiaPendientesListado.jsx";
+import GuardiaRegistroActividad from "../guardiaRegistro/GuardiaRegistroActividad.jsx";
+import GuardiaInicio from "../guardiainicio/guardiainicio.jsx"; 
+import NotificacionesGuardia from "../../pages/NotificationsGuard/NotificationsGuard.jsx"
 
 
 import { 
     fetchPersonas, 
     fetchAllIncidentes, 
     fetchEntradas 
-} from "../services/Api.jsx"; 
+} from "../../services/Api.jsx"; 
 
-import "../components/guardia/GuardiaEntradaComponent.css";
-
-
-// ------------------------------------------------------------------
-// Componente NotificacionesGuardia (Se mantiene igual)
-// ------------------------------------------------------------------
-const NotificacionesGuardia = ({ 
-    onNavigate, 
-    incidentesPendientesCount,
-    pendientesRegistroCount,
-    alertasDeAccesoCount,
-    incidentesPendientesIDs 
-}) => {
-    const incidentesPendientes = incidentesPendientesCount;
-    const pendientesRegistro = pendientesRegistroCount;
-    const alertasDeAcceso = alertasDeAccesoCount; 
-
-    return (
-        <div>
-            <h2>🔔 Panel de Notificaciones y Alertas</h2>
-            <p>Estado actual de reportes y accesos críticos:</p>
-
-            <div className="notificaciones-listado">
-                {/* Alerta de Incidentes */}
-                {incidentesPendientes > 0 && (
-                    <div className="alerta alerta-advertencia">
-                        <div>
-                            <strong>Reportes Abiertos:</strong> Tienes **{incidentesPendientes}** incidentes reportados pendientes de revisión.
-                            <p style={{ marginTop: '5px', fontSize: '0.9em' }}>
-                                IDs Pendientes: {(incidentesPendientesIDs.slice(0, 3).join(', ') + (incidentesPendientesIDs.length > 3 ? '...' : '')) || 'N/A'}
-                            </p>
-                        </div>
-                        <button
-                            onClick={() => onNavigate("mis-incidentes")}
-                            className="btn-alerta-revisar"
-                        >
-                            Ver Mis Reportes
-                        </button>
-                    </div>
-                )}
-
-                {/* Alerta de Pendientes de Registro */}
-                {pendientesRegistro > 0 && (
-                    <div className="alerta alerta-informacion">
-                        <div>
-                            <strong>Pendientes de Registro:</strong> Hay **{pendientesRegistro}** solicitud pendiente de revisión del administrador.
-                        </div>
-                        <button
-                            onClick={() => onNavigate("pendientes")}
-                            className="btn-alerta-revisar"
-                        >
-                            Ver Solicitudes
-                        </button>
-                    </div>
-                )}
-
-                {/* Alerta de Acceso Detenido */}
-                {alertasDeAcceso > 0 && (
-                    <div className="alerta alerta-peligro">
-                        <div>
-                            <strong>Acceso Restringido:</strong> ¡**{alertasDeAcceso}** intentos de acceso fueron detenidos hoy! Revisar registros.
-                        </div>
-                        <button
-                            onClick={() => onNavigate("registro_actividad")}
-                            className="btn-alerta-peligro-accion"
-                        >
-                            Ver Registro
-                        </button>
-                    </div>
-                )}
-
-                <div className="alerta alerta-informacion">
-                    <strong>Sistema:</strong> Listo para operar.
-                </div>
-            </div>
-        </div>
-    );
-};
-// ------------------------------------------------------------------
-
-
-// ------------------------------------------------------------------
-// Componente GuardiaEntradaComponent (Principal) 
-// ------------------------------------------------------------------
 const GuardiaEntrada = () => {
     // ESTADOS 
     const [seccion, setSeccion] = useState("inicio"); // Estado inicial restaurado a "inicio"
@@ -252,16 +167,13 @@ const GuardiaEntrada = () => {
         }
     };
 
-    // --- RENDER PRINCIPAL ---
     return (
-        <div className="guardia-container">
-            {/* 💡 ESTE ES EL ÚNICO LUGAR DONDE ESTÁ EL NAVBAR */}
+        <div>
             <Navbar 
                 onSelect={setSeccionConLimpieza}
                 pendingNotificationsCount={pendingNotificationsCount} 
             /> 
-            <div className="contenido">
-                {/* ✅ Renderizamos solo el contenido dinámico */}
+            <div>
                 {renderContenido()}
             </div>
         </div>

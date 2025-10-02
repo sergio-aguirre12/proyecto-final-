@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useMemo, useCallback } from "react";
-import AdminInicio from "../admin/adminincio/AdminInicio.jsx"; 
-import AdminNavbar from "../adminnavbar/adminnavbar.jsx";
-import LogoutButton from "../comon/LogoutButton.jsx"; 
-import IncidenteDetalleModal from "../modal/insidentedetallemodal.jsx";
-import UsuarioModal from "../modal/usariomodal.jsx";
-import NotificationsComponent from "./notifications/notifications.jsx";
-import "./AdminDashboardComponent.css";
+import AdminInicio from "../../components/admin/adminincio/AdminInicio.jsx"; 
+import AdminNavbar from "../../components/adminnavbar/adminnavbar.jsx";
+import LogoutButton from "../../components/comon/LogoutButton.jsx"; 
+import IncidenteDetalleModal from "../../components/modal/insidentedetallemodal.jsx";
+import UsuarioModal from "../../components/modal/usariomodal.jsx";
+import NotificationsComponent from "../../components/admin/notifications/notifications.jsx";
+import "./AdminDashboard.css";
 import {
     fetchPersonas,
     updatePersonaStatus,
@@ -19,7 +19,7 @@ import {
     deleteUsuario,
 } from "../../services/Api.jsx";
 
-const AdminDashboardComponent = () => {
+const AdminDashboard = () => {
     const [seccion, setSeccion] = useState("inicio");
     const [personas, setPersonas] = useState([]);
     const [incidentesCargados, setIncidentesCargados] = useState([]);
@@ -348,4 +348,4 @@ const AdminDashboardComponent = () => {
     );
 };
 
-export default AdminDashboardComponent;
+export default AdminDashboard;

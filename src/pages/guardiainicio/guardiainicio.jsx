@@ -1,7 +1,7 @@
 // src/components/guardia/guardiainicio/GuardiaInicio.jsx
 
 import React from 'react';
-import './GuardiaInicio.css'; // Asume que crearás un archivo CSS para estilos
+import './GuardiaInicio.css';
 
 const GuardiaInicio = ({ 
     isLoading, 

@@ -6,6 +6,10 @@
   border-radius: 8px;
 }
 
+.form-incidente > form > p {
+  color: black;
+}
+
 .form-incidente h2 {
   text-align: center;
   margin-bottom: 20px;

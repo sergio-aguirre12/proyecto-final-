@@ -1,9 +1,6 @@
-// src/components/guardia/GuardiaIncidentesListado.jsx
-
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 // ❌ ELIMINADAS: La importación de Navbar y LogoutButton
 import { fetchAllIncidentes } from '../../services/Api.jsx'; 
-import './GuardiaEntradaComponent.css'; // Asegúrate de que existe este CSS
 
 const GuardiaIncidentesListado = ({ onReporteClick }) => {
     

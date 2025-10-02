@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { fetchAllAccesos } from '../../services/Api.jsx'; 
-import './GuardiaEntradaComponent.css'; // 🚨 ASEGÚRATE DE USAR ESTE NOMBRE DE ARCHIVO CSS
+import './GuardiaEntradaComponent.css'; 
 
 const GuardiaRegistroActividad = ({ onVolver }) => {
     // ESTADOS
@@ -108,7 +108,6 @@ const GuardiaRegistroActividad = ({ onVolver }) => {
                     logsFiltrados.map((item) => (
                         <div 
                             key={item.id} 
-                            // Asume que tienes una propiedad 'aceptado' (boolean) en tu log de entradas
                             className={`log-item ${item.aceptado ? 'log-aceptado' : 'log-denegado'}`}
                         >
                             <p><strong>Fecha/Hora:</strong> {item.fecha} {item.hora}</p>

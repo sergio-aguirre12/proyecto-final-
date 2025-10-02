@@ -71,6 +71,8 @@ const ReportarIncidente = () => {
     }
   };
 
+  console.log(persona)
+
   return (
     <div className="form-incidente">
       <h2>📋 Reportar Incidente</h2>
@@ -85,9 +87,10 @@ const ReportarIncidente = () => {
           onChange={(e) => setCedula(e.target.value)}
         />
         {persona && (
-          <p>
-            <strong>Nombre:</strong> {persona.nombre}
-          </p>
+          <>
+          <p> <strong>Nombre:</strong> {persona.nombre} </p>
+          <p> <strong>Cedula:</strong> {persona.id} </p>
+          </>
         )}
         <input
           type="text"

@@ -1,0 +1,29 @@
+/* ================================================= */
+/* CSS PRINCIPAL (Variables, Body, Layout)             */
+/* ================================================= */
+
+:root {
+    /* 1. PALETA DE COLORES */
+    --color-bg-app: #1c1c2e;    /* Fondo oscuro principal (púrpura-negro) */
+    --color-bg-card: #2e2e4a;   /* Fondo de contenedores (más claro que el app bg) */
+    
+    --color-primary: #8a2be2;   /* Púrpura/Violeta Eléctrico (Acentos, botones principales) */
+    --color-accent: #ffc107;    /* Dorado/Amarillo (Advertencias, acentos) */
+    --color-danger: #dc3545;    /* Rojo Neón (Cerrar sesión, alertas críticas) */
+    --color-success: #28a745;   /* Verde (Éxito, aceptación) */
+    
+    --color-text-light: #f8f9fa; /* Texto principal claro */
+    --color-text-dark: #333333;  /* Texto sobre fondo claro */
+    --color-input-bg: #333333;  /* Fondo de inputs */
+}
+
+body {
+    background-color: var(--color-bg-app);
+    color: var(--color-text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+

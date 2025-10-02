@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { fetchPersonasPendientes } from '../../services/Api.jsx'; 
-import './GuardiaEntradaComponent.css'; // 🚨 ASEGÚRATE DE USAR ESTE NOMBRE DE ARCHIVO CSS
 
 const GuardiaPendientesListado = () => {
     const [pendientes, setPendientes] = useState([]);

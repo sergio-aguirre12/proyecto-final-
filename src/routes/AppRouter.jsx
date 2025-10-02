@@ -1,11 +1,10 @@
 
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginPage from '../pages/LoginPage.jsx';
-import AdminDashboardPage from '../pages/AdminDashboard.jsx';
-import GuardiaEntrada from '../pages/GuardiaEntrada.jsx';
+import LoginPage from '../pages/LoginPage/LoginPage.jsx';
+import AdminDashboardPage from '../pages/AdminDashBoard/AdminDashboard.jsx';
+import GuardiaEntrada from '../pages/GuardiaEntrada/GuardiaEntrada.jsx' 
 import RoleGuard from '../components/RoleGuard.jsx';
-import GuardiaPendientesListado from '../components/guardia/GuardiaPendientesListado.jsx';
 
 const AppRouter = () => (
 
